@@ -2,23 +2,47 @@
 <html>
 <head>
 <title>Nathaniel Zagrabelny's Website</title>
+<style>
+ body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        font-size: 25px;
+      }
+      .dark-mode {
+        background-color: black;
+        color: green;
+      }
+      .light-mode {
+        background-color: white;
+        color: black;
+      }
+    </style>
+
 </head>
 <body>
+
 
 <h1>Welcome!</h1>
 <p>This site is for dirty pirates. ARRRRRRRRR</p>
 
 
-  <video width="1280" height="720" controls>
+
+
+  <video width="640" height="480" controls>
   <source src="duck.webm" type="video/webm">
 Your browser does not support the video tag.
-</video> 
- 
- 
- 
- 
- 
- 
- 
+</video>
+
+<button onclick="myFunction()">TTY Mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+
+
  </body>
-</html> 
+</html>
