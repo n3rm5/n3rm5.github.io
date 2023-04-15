@@ -15,7 +15,7 @@ I am here to tell you it is not only possible but very easy.
 <br/>
 <br/>
 <br/>
-**Step 1** Go to your url and type `about:support` click on the `Open Directory` link, 
+**Step 1** Go to your url and type `about:support` click on the `Open Directory` link. 
 <br/>
 <br/>
 <br/>
@@ -23,7 +23,7 @@ I am here to tell you it is not only possible but very easy.
 <br/>
 <br/>
 <br/>
-**Note:** *If your file manager does not automatically open the link you can copy and paste the path into your file manager*
+**Note:** *If your file manager does not automatically open the link you can copy and paste the path into your file manager.*
 <br/>
 <br/>
 <br/>
