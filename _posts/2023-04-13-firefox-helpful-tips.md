@@ -20,12 +20,12 @@ I am here to tell you it is not only possible but very easy.
 **Step 2** Create a directory inside your Firefox default-release directory called `chrome` inside of this directory 
 create another directory called `img` this is where your source image file will be stored. 
 
-<img src="/assets/img/firefox#3.png">
+<img src="/assets/img/firefox/firefoxthree.png">
 
 
 **Step 3** Go back to the chrome directory and create a `.css` file called `userContent.css` add the following to the file:
 
-{% highlight css linenos %}
+{% highlight css %}
 
 @-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
 .click-target-container *, .top-sites-list * {
@@ -46,8 +46,5 @@ body::before {
 
 {% endhighlight %}
 
-{% highlight ruby linenos %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
+
+**Step 4** Save the `.css` file and open firefox, navigate to `about:config` 
