@@ -5,27 +5,49 @@ date:   2023-04-13 14:55:56 -0500
 categories: jekyll update
 ---
 
-Firefox css 
+Have you ever wanted to change the default "New Tab" background on Firefox from that awful blinding white or ugly grey? 
+Well for the longest time I did aswell, I was too lazy to do my research and I just sat around pretending it was impossible.
+I am here to tell you it is not only possible but very easy.
 
-If you are using Firefox 70+ versions on Linux, like me:
+<img src="/assets/img/firefox#1.png">
 
-1. Go to about:support. And look for the "Profile Directory" button. 2. On the opened directory, create a folder called "chrome" if it doesn't exist. 3. Create a file called userContent.css, and paste in the following contents: ``` @-moz-document url-prefix(about:home), url-prefix(about:newtab) { .click-target-container *, .top-sites-list * { color: #fff !important ; text-shadow: 2px 2px 2px #000 !important ; }
+**Step 1** Go to your url and type `about:support` click on the `Open Directory` link, 
 
-body { background: url(/usr/share/backgrounds/flowers-4564439.jpg) !important ; background-size: cover !important ; } } ``` Save the file and open Firefox (no need to restart at this point).
+<img src="/assets/img/firefox#2.png">
 
-·	 [replace the url(...) with the image path. Here, in my case I have images in the /usr/share/backgrounds direcotry]
+**Note:** *If your file manager does not automatically open the link you can copy and paste the path into your file manager*
 
-·	 [The `background-size: cover !important  ;` line here means that the image will be resized automatically].
+**Step 2** Create a directory inside your Firefox default-release directory called `chrome` inside of this directory 
+create another directory called `img` this is where your source image file will be stored. 
 
-·	 [Everything is self explainatory here]
+<img src="/assets/img/firefox#3.png">
 
-·	 [IDK how to format codes on support.mozilla.org]. 
 
-4. Open the url about:config, and change the option "toolkit.legacyUserProfileCustomizations.stylesheets" to true.
+**Step 3** Go back to the chrome directory and create a `.css` file called `userContent.css` add the following to the file:
 
-5. Restart firefox. It should look more awesome now!
+{% highlight css linenos %}
 
-echo export MOZ_USE_XINPUT2=1 | sudo tee /etc/profile.d/use-xinput2.sh
+@-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing) {
+.click-target-container *, .top-sites-list * {
+    color: #fff !important ;
+    text-shadow: 2px 2px 2px #222 !important ;
+}
+body::before {
+    content: "" ;
+    z-index: -1 ;
+    position: fixed ;
+    top: 0 ;
+    left: 0 ;
+    background: #f9a no-repeat url(img/yourimagefilenamehere.jpg) center ;
+    background-size: cover ;
+    width: 100vw ;
+    height: 100vh ;
+}
 
-gfx.webrender.software
+{% endhighlight %}
 
+{% highlight ruby linenos %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
