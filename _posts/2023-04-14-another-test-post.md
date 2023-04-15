@@ -9,3 +9,6 @@ Once again I am back to help type things.
 Here's an image of a bald.
 
 ![bald](bald.png)
+
+
+Try balding this now!
