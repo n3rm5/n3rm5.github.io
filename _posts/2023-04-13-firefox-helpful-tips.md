@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Firefox helpful tips"
+title:  "Firefox 'New Tab' background" 
 date:   2023-04-13 14:55:56 -0500
 categories: jekyll update
 ---
