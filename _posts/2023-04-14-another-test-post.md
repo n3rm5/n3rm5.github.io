@@ -8,7 +8,7 @@ Once again I am back to help type things.
 
 Here's an image of a bald.
 
-<img src="{{n3rm5.github.io}}/assets/img/bald.png">
+<img src="n3rm5.github.io/assets/img/bald.png">
 
 
 Try balding this now!
