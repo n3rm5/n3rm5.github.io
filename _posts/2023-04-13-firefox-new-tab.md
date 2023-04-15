@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 
 Have you ever wanted to change the default "New Tab" background on Firefox from that awful blinding white or ugly grey? 
-Well for the longest time I did aswell, I was too lazy to do my research and I just sat around pretending it was impossible.
+Well for the longest time I did as well, I was too lazy to do my research and I just sat around pretending it was impossible.
 I am here to tell you it is not only possible but very easy.
 <br/>
 <br/>
